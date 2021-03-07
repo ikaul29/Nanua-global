@@ -1,0 +1,22 @@
+.blog_design{
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+}
+
+.container_blog{
+    width: 80%;
+    margin: auto;
+}
+.blog_design h1{
+    font-size: 40px;
+    color:#ec9114;
+    margin: 20px 0;
+}
+
+.blog_design p,
+.blog_design li{
+    font-size: 20px;
+    margin: 10px 0;
+}
