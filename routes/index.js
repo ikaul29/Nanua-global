@@ -6,22 +6,16 @@ const router = express.Router();
 // @desc Login/Landing page
 // @route GET /
 router.get('/', function(req, res) {
-    res.render('index', {
-        title: "some value",
-    });
+    res.render('home');
 })
-
-
-// @desc About page
-// @route GET /about
-router.get('/about', function(req, res) {
-    res.render('about');
+router.get('/home', function(req, res) {
+    res.render('home');
 })
 
 // @desc Contact page
 // @route GET /contact
-router.get('/contact', function(req, res) {
-    res.render('contact');
+router.get('/mail', function(req, res) {
+    res.render('mail');
 })
 
 // @desc Courses page
@@ -34,6 +28,9 @@ router.get('/courses', function(req, res) {
 // @route GET /about
 router.get('/blog', function(req, res) {
     res.render('blog');
+})
+router.get('/services', function(req, res) {
+    res.render('services');
 })
 
 

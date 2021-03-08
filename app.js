@@ -29,15 +29,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Handlebars Middlebars
-app.engine('.hbs', exphbs({
-    defaultLayout: 'main',
-    extname: 'hbs',
-}));
-app.set('view engine', '.hbs');
+// app.engine('.hbs', exphbs({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+// }));
+//app.set('view engine', '.hbs');
 
-// Middleware
-// app.use(express.json())
-// app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.use('/', require('./routes/index.js'));
 
