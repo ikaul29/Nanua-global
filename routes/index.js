@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
+const ContactControls = require('../controllers/ContactControls');
 
 
 // @desc Login/Landing page
@@ -32,6 +33,16 @@ router.get('/blog', function(req, res) {
 router.get('/services', function(req, res) {
     res.render('services');
 })
+
+
+
+// @desc Submitting Email for newsletter
+// @route POST /email
+router.post('/email', ContactControls.postEmail);
+
+// @desc Submitting Contact Info
+// @route POST /contact
+router.post('/contact', ContactControls.postContacts);
 
 
 module.exports = router;

@@ -332,94 +332,44 @@
     <!-- //stats-bottom -->
     <script src="js/bars.js"></script>
 
-    <div class="footer">
-        <div class="container">
-            <h2>Contact<span>Us</span></h2>
-            <form action="#" method="post">
-                <input type="email" name="Email" placeholder="Enter Your Email..." required="">
-                <input type="submit" value="Send">
-            </form>
-            <div class="agile_footer_copy">
-                <div class="w3agile_footer_grids">
-                    <div class="col-md-4 w3agile_footer_grid">
-                        <h3>About Us</h3>
-                        <p>Nanua Global is a leading institute in the field of communication skills, English speaking, English writing and personality development. Nanua Global provides guidance to ace competitive exams like IELTS, TOEFL, etc. With immense
-                            dedication and 20 years of experience, Nanua Global helps people achieve their goals and speak english confidently. Nanua Global helps give shape to their careers and dreams.<span>
-						</span></p>
-                    </div>
-                    <div class="col-md-4 w3agile_footer_grid">
-                        <h3>Contact Info</h3>
-                        <ul>
-                            <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>B2/20 sector 11 Rohini , India<span>110085 Delhi.</span></li>
-                            <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="iamrachnayadav@gmail.com">iamrachnayadav@gmail.com</a></li>
-                            <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91 9654420600</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 w3agile_footer_grid w3agile_footer_grid1">
-                        <h3>Navigation</h3>
-                        <ul>
-                            <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="courses.html">Courses</a></li>
-                            <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="services.html">FAQs</a></li>
-                            <!--<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="icons.html">Web Icons</a></li>-->
-                            <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="mail.html">Mail Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-            <div class="w3_agileits_copy_right_social">
-                <div class="col-md-6 agileits_w3layouts_copy_right">
-                    <p>&copy; 2021 </div>
-                <div class="col-md-6 w3_agile_copy_right">
-                    <ul class="agileinfo_social_icons">
-                        <li><a href="#" class="w3_agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="agileinfo_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#" class="agileits_pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-    <!-- //footer -->
+    <%- include('layouts/footer.ejs')%>
 
-    <!-- start-smooth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1000);
+        <!-- start-smooth-scrolling -->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 1000);
+                });
             });
-        });
-    </script>
-    <!-- start-smooth-scrolling -->
-    <!-- for bootstrap working -->
-    <script src="js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-            	var defaults = {
-            	containerID: 'toTop', // fading element id
-            	containerHoverID: 'toTopHover', // fading element hover id
-            	scrollSpeed: 1200,
-            	easingType: 'linear' 
-            	};
-            */
+        </script>
+        <!-- start-smooth-scrolling -->
+        <!-- for bootstrap working -->
+        <script src="js/bootstrap.js"></script>
+        <!-- //for bootstrap working -->
+        <!-- here stars scrolling icon -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                	var defaults = {
+                	containerID: 'toTop', // fading element id
+                	containerHoverID: 'toTopHover', // fading element hover id
+                	scrollSpeed: 1200,
+                	easingType: 'linear' 
+                	};
+                */
 
-            $().UItoTop({
-                easingType: 'easeOutQuart'
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
             });
-
-        });
-    </script>
-    <!-- //here ends scrolling icon -->
+        </script>
+        <!-- //here ends scrolling icon -->
 </body>
 
 </html>
