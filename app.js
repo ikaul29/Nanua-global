@@ -8,11 +8,12 @@ const passport = require('passport');
 
 const logger = require("./middleware/logger");
 const connectDB = require('./config/db.js');
+const mongoConnect = require('./util/database').mongoConnect;
 
 
 // Load config
 dotenv.config({ path: './config/config.env' })
-
+mongoose.set('useCreateIndex', true);
 // connectDB(); // Mongo Stuff
 
 // App Config
@@ -55,13 +56,13 @@ app.use(logger);
 //     useUnifiedTopology: true,
 // });
 
-
+mongoose.connect('mongodb+srv://admin:akaash@nanua.rzgin.mongodb.net/Nanua?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        app.listen(PORT, () => {
+            console.log(`Server listening on ${PORT}`);
+        });
+    })
+    .catch(err => console.log(err));
 
 
 // App Endpoints
-
-
-
-
-// Listening
-app.listen(PORT, () => console.log(`Listening on port :${PORT}`));
