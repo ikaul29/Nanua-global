@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 :root {
     --main: #6787e7;
     --accent: #ffc421;
-    --accent2: #6787e7;
+    --accent2: transparent;
 }
 
 html,
