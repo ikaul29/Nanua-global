@@ -3,7 +3,7 @@ const MongoClient = require('mongodb').MongoClient;
 let _db; //'_' private
 
 const mongoConnect = function(callback) {
-    MongoClient.connect('mongodb+srv://admin:akaash@nanua.rzgin.mongodb.net/Nanua?retryWrites=true&w=majority', { useUnifiedTopology: true })
+    MongoClient.connect(process.env.MONGO_URI, { useUnifiedTopology: true })
         .then(client => {
             _db = client.db('cart-api');
             callback();

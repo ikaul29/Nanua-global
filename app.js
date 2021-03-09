@@ -56,7 +56,7 @@ app.use(logger);
 //     useUnifiedTopology: true,
 // });
 
-mongoose.connect('mongodb+srv://admin:akaash@nanua.rzgin.mongodb.net/Nanua?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         app.listen(PORT, () => {
             console.log(`Server listening on ${PORT}`);
