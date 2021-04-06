@@ -6,7 +6,6 @@ Deploying a web app for [Nanua Global](https://nanua-global.herokuapp.com), an E
 Working with these technologies:
 - Node.js
 - Express
-- Passport (w google OAuth)
 - MongoDB
 
 
