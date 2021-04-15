@@ -49,7 +49,6 @@ app.use(logger);
 
 
 
-
 // DB Config     Mongo Stuff
 // mongoose.connect(connection_url, {
 //     useNewUrlParser: true,

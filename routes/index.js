@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const path = require('path');
 const router = express.Router();
@@ -39,5 +41,18 @@ router.get('/dashboard', function(req, res) {
     res.render('dashboard');
 })
 
+//register
+router.get('/register', function(req, res) {
+    res.render('register');
+})
+
+//login
+router.get('/login', function(req, res) {
+    res.render('login');
+})
+//welcome
+router.get('/welcome', function(req, res) {
+    res.render('welcome');
+})
 
 module.exports = router;
